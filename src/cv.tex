@@ -1,0 +1,186 @@
+\documentclass[line,margin]{res}
+\usepackage{pifont}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+
+\oddsidemargin -.5in
+\evensidemargin 0in
+\textwidth=6.2in
+\textheight=10in
+\itemsep=0in
+\parsep=0in
+% if using pdflatex:
+% \setlength{\pdfpagewidth}{\paperwidth}
+% \setlength{\pdfpageheight}{\paperheight}
+
+\newenvironment{list1}{
+  \begin{list}{}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.17in}}}{\end{list}}
+\newenvironment{list2}{
+  \begin{list}{\boldmath$\cdot$}{%
+      \setlength{\itemsep}{0in}
+      \setlength{\parsep}{0in} \setlength{\parskip}{0in}
+      \setlength{\topsep}{0in} \setlength{\partopsep}{0in}
+      \setlength{\leftmargin}{0.2in}}}{\end{list}}
+
+% disable page numbers
+\pagenumbering{gobble}
+
+\begin{document}
+
+\vspace*{-0.5in}
+\name{Jonathan W. Chen \vspace*{.1in}}
+
+\begin{resume}
+\section{\sc Contact Information}
+\vspace{.05in}
+\begin{tabularx}{\textwidth}{@{} X @{} X @{}}
+Ph.D. Student, Wong Lab & {\it Phone:} (925) 818-1006 \\
+Department of Bioengineering & {\it E-mail:} \href{mailto:jwhc@ucla.edu}{jwhc@ucla.edu} \\
+University of California, Los Angeles & {\it Social:}
+\href{https://www.linkedin.com/in/jonathan-chen-54648478/}{LinkedIn}
+\href{https://github.com/jowch}{GitHub}
+\end{tabularx}
+
+
+\section{\sc Research Interests}
+Applications of machine learning, human-in-the-loop learning,
+computer-assisted decision making, \\ Bayesian methods, and
+active learning in medicine and biological systems.
+
+
+\section{\sc Education}
+{\bf University of California, Los Angeles}, Los Angeles, California, USA \vspace{0.3em} \\
+Ph.D. Student, Bioengineering. Advisor: Professor Gerard C. L. Wong, PhD.
+
+{\bf Washington University in St. Louis}, St. Louis, Missouri USA \vspace{0.3em} \\
+B.S. and M.S. Candidate, Computer Science with second major in Genomics
+and Computational Biology and minor in Bioinformatics. May 2020.
+\vspace*{0.3em}
+\begin{list2}
+\vspace*{.05in}
+\item Thesis Topic: ``Rapid Generalized Psychometric Function Estimation
+with Active Learning''
+\item Advisor: Professor Dennis Barbour, MD, PhD.
+\end{list2}
+
+
+\section{\sc Awards and Honors}
+{\bf Academic} \vspace{0.3em} \\
+Dean's List, Spring 2018
+
+{\bf Teaching} \vspace{0.3em} \\
+Computer Science and Engineering: Outstanding Senior Award, Spring 2019
+
+
+
+\section{\sc Academic Experience}
+{\bf Washington University in St. Louis}, St. Louis, Missouri USA \vspace{-0.7em}
+
+{\em Graduate Student} \hfill {\bf June 2018 - June 2020} \\
+Laboratory of Sensory Neuroscience and Neuroengineering {\it PI:} Dennis Barbour \\
+\vspace*{-.1in}
+\begin{list2}
+\item Led a project to develop active multi-dimensional, general
+psychometric function estimation with Gaussian Processes and Bayesian active
+learning. This includes the generalization of error function likelihood for
+guess and lapse rate classification problems and the extension of an existing
+uncertainty estimation function.
+\end{list2}
+
+{\em Head Teaching Assistant} \hfill {\bf August 2018 - June 2020} \vspace{0.3em} \\
+(1) Introduction to Data Science (2) Cloud Computing and Big Data \\
+\vspace*{-.1in}
+\begin{list2}
+\item Sharing administrative responsibilities with faculty instructor,
+fielding of student inquiries ($120+$ students), and coordinating a team
+of 10-15 undergraduate student teaching assistants and graders.
+\item Proposing, creating, and updating homework and in-class lab assignments. Grading of homework and exams.
+\end{list2}
+
+{\em Student Researcher} \hfill {\bf January 2017 - December 2017}\\
+Ding Lab \\
+\vspace*{-.1in}
+\begin{list2}
+\item Mined 11,000 cancer patient tumor genomes to study rare copy number
+variants and mutagenesis mechanisms.
+\item Automated and scaled analysis pipeline to be run either locally or on
+an IBM LSF computing cluster.
+\end{list2}
+
+{\em Teaching Assistant} \hfill {\bf January 2017 - May 2018}\\
+Computer Science II \\
+\vspace*{-.1in}
+\begin{list2}
+\item Assisted with lab studios and answered questions during office hours. Also helped grading of homework and exams.
+\end{list2}
+
+\newpage 
+\section{\sc Professional Experience}
+{\bf IBM}, San Jose, California USA
+
+\vspace{-0.3cm}
+{\em Senior Software Engineer, Intern} \hfill {\bf June 2019 - August 2019}\\
+\vspace*{-.1in}
+\begin{list2}
+\item Undertook user-facing web application development for a
+one-stop-shop, AI pipeline component sharing platform.
+\item Collaborated closely with AI and backend engineers to implement a
+user-interface exposing Kubeflow backend with React.
+\end{list2}
+
+{\bf Stentor Technology}, Walnut Creek, California USA
+
+\vspace{-0.3cm}
+{\em Full Stack Developer} \hfill {\bf June 2017 - December 2017}\\
+\vspace*{-.1in}
+\begin{list2}
+\item Led the development and deployment of a token value exchange system
+via Solidity contract for Ethereum blockchain.
+\item Designed client-facing mobile app for customers to manage their token
+assets, including authentication, marketplaces, and transfer interfaces using
+React Native.
+\item Engineered robust REST APIs using Node.js and Express.js to interface
+between Transact-SQL database and front-end interfaces.
+\end{list2}
+
+
+% \section{\sc Papers in preparation}
+
+
+\section{\sc Publications}
+
+% \textbf{2019-2021} \\ \vspace{-0.5em}
+
+\begin{list}{*}{}
+
+\item[3.] Calvin K. Lee, William C. Schmidt, Shanice S. Webster, \textbf{Jonathan W. Chen}, George A. O'Toole, and Gerard C. L. Wong.
+Broadcasting of amplitude- and frequency-modulated c-di-GMP signals facilitates
+cooperative surface commitment in bacterial lineages. \textit{PNAS}. 2022
+
+\item[2.] \textbf{J.W. Chen}, T. Larsen, M. Neumann.
+Exploring Unfairness and Bias in Data. \textit{Proceedings of the AAAI
+Conference on Artificial Intelligence}. 2020.
+
+\item[1.] M. Neumann, \textbf{J.W. Chen}. Introduction to Python for Data Science.
+\textit{Proceedings of the AAAI Conference on Artificial Intelligence}. 2019.
+
+\end{list}
+
+% \section{\sc Conference Presentations}
+
+% \textbf{J.W. Chen}, T. Larsen, M. Neumann. 2020. Exploring Unfairness and
+% Bias in Data. \textit{10th Symposium on Educational Advances in Artificial
+% Intelligence, New York, USA, February, 2020}. Oral Presentation.
+
+% J.W. Chen, M. Neumann. 2019. Introduction to Python for Data Science. 9th
+% Symposium on Educational Advances in Artificial Intelligence, Hawaii, USA,
+% January, 2019. Oral presentation.
+
+\end{resume}
+\end{document}
